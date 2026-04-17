@@ -1,0 +1,13 @@
+# Logs
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Python local server cache
+__pycache__/
+
+# Build or coverage artifacts
+dist/
+coverage/

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="game-card" aria-labelledby="titulo-jogo">
+      <p class="eyebrow">HTML, CSS e JavaScript</p>
+      <h1 id="titulo-jogo">Jogo da Velha</h1>
+      <p class="subtitle">
+        Clique em um espaço do tabuleiro para jogar. O primeiro a alinhar
+        três simbolos vence a rodada.
+      </p>
+
+      <div class="status-panel">
+        <div>
+          <span class="label">Status</span>
+          <p id="status" class="status-text">Vez do jogador X</p>
+        </div>
+        <button id="restart-button" class="restart-button" type="button">
+          Reiniciar
+        </button>
+      </div>
+
+      <div class="scoreboard" aria-label="Placar">
+        <article class="score-card">
+          <span class="label">Jogador X</span>
+          <strong id="score-x">0</strong>
+        </article>
+        <article class="score-card">
+          <span class="label">Empates</span>
+          <strong id="score-draw">0</strong>
+        </article>
+        <article class="score-card">
+          <span class="label">Jogador O</span>
+          <strong id="score-o">0</strong>
+        </article>
+      </div>
+
+      <section class="board" aria-label="Tabuleiro do jogo da velha">
+        <button class="cell" type="button" data-cell aria-label="Casa 1"></button>
+        <button class="cell" type="button" data-cell aria-label="Casa 2"></button>
+        <button class="cell" type="button" data-cell aria-label="Casa 3"></button>
+        <button class="cell" type="button" data-cell aria-label="Casa 4"></button>
+        <button class="cell" type="button" data-cell aria-label="Casa 5"></button>
+        <button class="cell" type="button" data-cell aria-label="Casa 6"></button>
+        <button class="cell" type="button" data-cell aria-label="Casa 7"></button>
+        <button class="cell" type="button" data-cell aria-label="Casa 8"></button>
+        <button class="cell" type="button" data-cell aria-label="Casa 9"></button>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
